@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>module-for-drawing-shapes</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+<canvas id="canvas" width="500" height="500"></canvas>
+<script src="scripts/shape.js"></script>
+<script src="scripts/renderer.js"></script>
+<script>
+    var rect = shapes.getRectangle(100, 100, 77, 77);
+    var canvas = renderers.getCanvas('#canvas');
+    canvas.draw(rect);
+
+    var line = shapes.getLine(5, 5, 333, 245);
+    canvas.draw(line);
+
+    var circle = shapes.getCircle(200, 200, 50);
+    canvas.draw(circle);
+</script>
+</body>
+</html>

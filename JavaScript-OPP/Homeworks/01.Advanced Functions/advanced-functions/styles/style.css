@@ -1,0 +1,11 @@
+#console {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    display: block;
+    color: white;
+}
+
+p {
+    padding-left: 10px;
+}
